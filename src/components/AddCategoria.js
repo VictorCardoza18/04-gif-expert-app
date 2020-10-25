@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 const AddCategoria = ({ setCategorias }) => {
   const [inputText, setInputText] = useState("");
 
-  const HandleInputChange = (event) => {
+  // Funcione que se ejecutara cada que cambia el input
+  const InputChangeText = (event) => {
     setInputText(event.target.value);
   };
 
@@ -19,8 +20,8 @@ const AddCategoria = ({ setCategorias }) => {
   };
 
   return (
-    <form onSubmit={HandleSubmit}>
-      <input type="text" value={inputText} onChange={HandleInputChange}></input>
+    <form onSubmit={AñadirCategoriaLista}>
+      <input type="text" value={inputText} onChange={InputChangeText}></input>
     </form>
   );
 };
