@@ -8,7 +8,8 @@ const AddCategoria = ({ setCategorias }) => {
     setInputText(event.target.value);
   };
 
-  const HandleSubmit = (event) => {
+  // Funcion que se ejecuta al subir el formulario
+  const AñadirCategoriaLista = (event) => {
     event.preventDefault();
 
     if (inputText.trim().length >= 2) {
