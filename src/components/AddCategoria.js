@@ -14,7 +14,7 @@ const AddCategoria = ({ setCategorias }) => {
     event.preventDefault();
 
     if (inputText.trim().length >= 2) {
-      setCategorias((categorias) => [...categorias, inputText]);
+      setCategorias((categorias) => [inputText, ...categorias]);
       setInputText("");
     }
   };
